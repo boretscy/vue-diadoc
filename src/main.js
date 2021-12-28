@@ -10,7 +10,7 @@ Vue.use(Vuex);
 
 Axios("https://portal.yug-avto.ru/service/diadoc/api/?user="+DiadocUser)
     .then(response => {
-        // console.log(response.data);
+        console.log(response.data);
         const DiadocStore = new Vuex.Store({
             state: response.data
         });
