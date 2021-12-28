@@ -39,12 +39,15 @@
                                     <td>{{ DOC.DocumentDate }}</td>
                                     <td class="text-right">
                                         <a 
+                                            target="_blank"
                                             class="btn btn-secondary btn-sm mr-3"
                                             :href="'https://diadoc.kontur.ru/'+ITEM.Org.BoxIdGuid+'/Document/Show?letterId='+DOC.MessageId+'&documentId='+DOC.EntityId">Посмотреть</a>
                                         <a 
+                                            target="_blank"
                                             class="btn btn-success btn-sm mr-3"
                                             :href="'https://diadoc.kontur.ru/'+ITEM.Org.BoxIdGuid+'/Document/Show?letterId='+DOC.MessageId+'&documentId='+DOC.EntityId">Согласовать</a>
                                         <a 
+                                            target="_blank"
                                             class="btn btn-danger btn-sm"
                                             :href="'https://diadoc.kontur.ru/'+ITEM.Org.BoxIdGuid+'/Document/Show?letterId='+DOC.MessageId+'&documentId='+DOC.EntityId">Отклонить</a>
                                     </td>
