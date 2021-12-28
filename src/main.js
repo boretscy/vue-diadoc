@@ -6,8 +6,9 @@ import App from './App.vue';
 
 Vue.use(Vuex);
 
-Axios("https://portal.yug-avto.ru/service/diadoc/api/?user="+User)
+Axios("https://portal.yug-avto.ru/service/diadoc/api/")
     .then(response => {
+        // console.log(response.data);
         const DiadocStore = new Vuex.Store({
             state: response.data
         });
@@ -21,14 +22,7 @@ Axios("https://portal.yug-avto.ru/service/diadoc/api/?user="+User)
 
 
 
-// const DiadocStore = new Vuex.Store({
-//     state: Start
-// });
-// new Vue({
-//     render: h => h(App),
-//     store: DiadocStore,
-// })
-// .$mount('#diadoc');
+
 
 // new Vue({
 //     render: h => h(App),
